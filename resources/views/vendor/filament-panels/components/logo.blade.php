@@ -1,0 +1,1 @@
+<img src="{{asset('favicon.png')}}" alt="logo" class="h-10">
