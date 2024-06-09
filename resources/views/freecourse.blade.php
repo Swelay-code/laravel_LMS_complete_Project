@@ -11,7 +11,7 @@
                     <div class="video-container">
                     <div class="video-playlist-1">
                             <video width="100%" height="auto" controls autoplay>
-                                <source src="videos/Chinland Tech.mp4" type="video/mp4">
+                                <source src="storage/cl.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -36,12 +36,12 @@
                         <ul class="list-group border-0 p-0 mt-1">
                             <li class="list-group-item border-0 bg-secondary text-white">Microsoft Office Word 2010</li>
                             
-                        @foreach ($data as $data )   
-                            <button class="btn-sm border-0 active" id="selectVideo1" onclick="changeVideo(this,'storage/{{$data->video}}');">
+                        @foreach ($data as $datas )   
+                            <button class="btn-sm border-0 active" id="selectVideo1" onclick="changeVideo(this,'storage/{{$datas->video}}');">
                                 <li class="list-group-item border-0 bg-body2 d-flex justify-content-between align-items-center "><span class="fas fa-play-circle" style="font-size: 25px;"></span><span class="pr-4 pl-4 text-center">
-                                {{$data->title}}
+                                {{$datas->title}}
                                 </span>
-                                <img src="storage/{{$data->coverimg}}" class="cllogo" alt="">
+                                <img src="storage/{{$datas->coverimg}}" class="cllogo" alt="">
                                 </li>
                             </button>
                         @endforeach
